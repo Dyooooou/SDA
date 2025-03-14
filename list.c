@@ -12,6 +12,7 @@ int CreateList(LinkedList *list){
 
 void InsertFirst(LinkedList *list, int value){
     Node *newNode = (Node*)malloc(sizeof(Node));
+    newNode->value = value;  // Set the value
     newNode->next = list->head;
     newNode->prev = NULL;
     if (list->head != NULL){
@@ -20,7 +21,6 @@ void InsertFirst(LinkedList *list, int value){
         list->tail = newNode;
     }
     list->head = newNode;
-    
 }
 
 void InsertLast(LinkedList *list, int value){
