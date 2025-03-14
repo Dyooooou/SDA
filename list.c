@@ -7,12 +7,11 @@ int CreateList(LinkedList *list){
     list->head = NULL;
     list->tail = NULL;
     return 1;
-    return 0;
 }
 
 void InsertFirst(LinkedList *list, int value){
     Node *newNode = (Node*)malloc(sizeof(Node));
-    newNode->value = value;  // Set the value
+    newNode->value = value;  
     newNode->next = list->head;
     newNode->prev = NULL;
     if (list->head != NULL){
