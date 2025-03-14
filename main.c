@@ -49,39 +49,39 @@ int main() {
     LinkedList list;
     CreateList(&list);
 
-    // 1) Insert 7 at the beginning
+    // 1) Insert 7 diawal
     InsertFirst(&list, 7);
     PrintForward(&list);
 
-    // 2) Insert 11 at the end
+    // 2) Insert 11 diakhir
     InsertLast(&list, 11);
     PrintForward(&list);
 
-    // 3) Insert 9 between 7 and 11
+    // 3) Insert 9 diantara 7 dan 11
     InsertAfter(&list, 9, 7);
     PrintForward(&list);
 
-    // 4) Insert 5 at the beginning
+    // 4) Insert 5 diawal
     InsertFirst(&list, 5);
     PrintForward(&list);
 
-    // 5) Insert 13 at the end
+    // 5) Insert 13 diakhir
     InsertLast(&list, 13);
     PrintForward(&list);
 
-    // 6) Delete the last element (13)
+    // 6) Delete last element (13)
     DeleteLast(&list);
     PrintForward(&list);
 
-    // 7) Delete the element with value 7
+    // 7) Delete element dgn value 7
     DeleteByValue(&list, 7);
     PrintForward(&list);
 
-    // 8) Delete the first element (5)
+    // 8) Delete Element pertama
     DeleteFirst(&list);
     PrintForward(&list);
 
-    // 9) Clear the list
+    // 9) Clear list
     ClearList(&list);
     PrintForward(&list);
 
